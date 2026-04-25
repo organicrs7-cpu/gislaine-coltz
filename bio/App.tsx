@@ -118,6 +118,18 @@ const App: React.FC = () => {
             onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/detox")}
           />
 
+          {/* Card: Anatomia Muscular */}
+          <VisualLinkCard
+            type="course"
+            title="Anatomia Muscular"
+            subtitle="Material Exclusivo"
+            buttonText="Acessar Agora"
+            theme="peach"
+            imageUrl="/bio/images/extra-backup.png"
+            badgeText="CONTEÚDO DIGITAL"
+            onClick={() => handleNavigation("https://pay.cakto.com.br/hgbejhd_310583")}
+          />
+
           {/* 3. Card: Cursos Presenciais */}
           <VisualLinkCard
             type="course"

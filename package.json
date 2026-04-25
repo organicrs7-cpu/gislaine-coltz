@@ -1,0 +1,7 @@
+{
+  "name": "gislaine-coltz-workspace",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  }
+}

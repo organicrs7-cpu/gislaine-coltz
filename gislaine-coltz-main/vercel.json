@@ -1,14 +1,4 @@
 {
     "buildCommand": "npm install && npm run build",
-    "installCommand": "npm install",
-    "rewrites": [
-      {
-        "source": "/bio/(.*)",
-        "destination": "https://seu-link-temporario-bio.vercel.app/$1"
-      },
-      {
-        "source": "/detox/(.*)",
-        "destination": "https://seu-link-temporario-detox.vercel.app/$1"
-      }
-    ]
+    "installCommand": "npm install"
 }

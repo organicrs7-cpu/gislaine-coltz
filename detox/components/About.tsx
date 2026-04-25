@@ -19,7 +19,7 @@ export const About: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-brand-secondary rounded-3xl rotate-3 opacity-20 translate-y-4 translate-x-4"></div>
               <img
-                src="gislaine-coltz.jpg"
+                src="/detox/gislaine-coltz.jpg"
                 alt="Gislaine Coltz"
                 className="relative rounded-3xl shadow-2xl w-full object-cover aspect-[3/4] border-4 border-brand-primary/30"
               />

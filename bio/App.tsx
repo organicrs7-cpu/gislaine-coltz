@@ -45,7 +45,7 @@ const App: React.FC = () => {
 
             {/* Main Hero Image */}
             <img
-              src="/images/hero-new.png"
+              src="images/hero-new.png"
               alt="Gislaine Coltz"
               className="w-full h-full object-cover transition-transform duration-[2s] ease-in-out group-hover:scale-105"
               style={{
@@ -90,7 +90,7 @@ const App: React.FC = () => {
             subtitle="Método Exclusivo"
             buttonText="Saiba Mais"
             theme="peach"
-            imageUrl="/images/card-drenagem-new.png"
+            imageUrl="images/card-drenagem-new.png"
             badgeText="CURSO ONLINE"
             extraContent={
               <div className="flex flex-col">
@@ -107,7 +107,7 @@ const App: React.FC = () => {
             subtitle="Manta Térmica"
             buttonText="Garantir Vaga"
             theme="dark"
-            imageUrl="/images/card-detox-new.jpg"
+            imageUrl="images/card-detox-new.jpg"
             badgeText="CURSO ONLINE"
             extraContent={
               <div className="flex flex-col">
@@ -125,7 +125,7 @@ const App: React.FC = () => {
             subtitle="Formações"
             buttonText="Vagas Fechadas"
             theme="light"
-            imageUrl="/images/card-cursos-new.png"
+            imageUrl="images/card-cursos-new.png"
             badgeText="PRESENCIAL"
             onClick={() => handleNavigation(WHATSAPP_LINK)}
           />
@@ -137,7 +137,7 @@ const App: React.FC = () => {
             subtitle="Atendimento Individual"
             buttonText="Chamar no WhatsApp"
             theme="peach"
-            imageUrl="/images/card-agendar-new.png"
+            imageUrl="images/card-agendar-new.png"
             onClick={() => handleNavigation(WHATSAPP_LINK)}
           />
 

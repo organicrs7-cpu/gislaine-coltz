@@ -96,7 +96,7 @@ export const Hero: React.FC = () => {
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-[6px] border-white">
               <img
-                src="/hero-image.jpg"
+                src="hero-image.jpg"
                 alt="Tratamento Estético Profissional"
                 className="w-full h-[550px] object-cover"
               />

@@ -127,6 +127,11 @@ const App: React.FC = () => {
             theme="peach"
             imageUrl="/bio/images/extra-backup.png"
             badgeText="CONTEÚDO DIGITAL"
+            extraContent={
+              <div className="flex flex-col mt-1">
+                <span className="text-sm font-bold text-[#9d6a6b] bg-white/40 px-2 py-0.5 rounded w-fit">Apenas R$ 39,90</span>
+              </div>
+            }
             onClick={() => handleNavigation("https://pay.cakto.com.br/hgbejhd_310583")}
           />
 

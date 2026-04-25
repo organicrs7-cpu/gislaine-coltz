@@ -1,0 +1,46 @@
+📸 ADICIONAR FOTOS AO PROJETO
+================================
+
+Esta pasta é onde você deve adicionar todas as fotos do projeto.
+
+FOTOS NECESSÁRIAS:
+------------------
+
+1. FOTO DE PERFIL
+   Nome sugerido: perfil.jpg
+   Atualizar em: App.tsx, linha 53
+   Dimensões sugeridas: 400x400px (quadrada)
+   
+2. CURSOS PRESENCIAIS
+   Nome sugerido: cursos-presenciais.jpg
+   Atualizar em: App.tsx, linha 103
+   Dimensões sugeridas: 400x400px
+   
+3. CURSO DE DRENAGEM
+   Nome sugerido: curso-drenagem.jpg
+   Atualizar em: App.tsx, linha 114
+   Dimensões sugeridas: 400x400px
+   
+4. AGENDAR ATENDIMENTO
+   Nome sugerido: agendamento.jpg
+   Atualizar em: App.tsx, linha 125
+   Dimensões sugeridas: 400x400px
+
+COMO USAR:
+----------
+
+1. Adicione suas fotos nesta pasta (public/images/)
+2. Abra o arquivo App.tsx
+3. Substitua os URLs que começam com "https://picsum.photos/..." 
+   pelos caminhos das suas fotos: "/images/nome-da-foto.jpg"
+
+EXEMPLO:
+--------
+
+ANTES:
+imageUrl="https://picsum.photos/id/447/400/400"
+
+DEPOIS:
+imageUrl="/images/cursos-presenciais.jpg"
+
+DICA: Use fotos de alta qualidade e certifique-se de que estão bem iluminadas!

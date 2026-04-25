@@ -115,7 +115,7 @@ const App: React.FC = () => {
                 <span className="text-xs font-bold text-[#eaddd5]">Apenas R$ 67,00</span>
               </div>
             }
-            onClick={() => handleNavigation("https://detox-pearl.vercel.app/")}
+            onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/detox")}
           />
 
           {/* 3. Card: Cursos Presenciais */}

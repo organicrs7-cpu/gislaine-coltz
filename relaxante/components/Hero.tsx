@@ -98,12 +98,8 @@ export const Hero: React.FC = () => {
               <span className="text-brand-primary">experiência de alto valor</span>
             </h1>
 
-            <p className="text-lg text-gray-600 mb-3 leading-relaxed font-medium">
-              Massagem Relaxante + Pedras Quentes com Protocolo Thai Spa
-            </p>
-
             <p className="text-base text-gray-500 mb-8 leading-relaxed font-light">
-              Um método completo que vai além da técnica: um atendimento sensorial, terapêutico e memorável capaz de fidelizar clientes e aumentar seu faturamento.
+              Massagem Relaxante + Pedras Quentes com Protocolo Thai Spa — um atendimento memorável que fideliza clientes e aumenta seu faturamento.
             </p>
 
             <div className="flex items-center gap-4 mb-8">

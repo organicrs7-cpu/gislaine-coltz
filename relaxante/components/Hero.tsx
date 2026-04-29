@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-brand-surface">
+    <section className="relative overflow-hidden bg-brand-surface" style={{ backgroundImage: 'url(/relaxante/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
       {/* ======================== MOBILE ======================== */}
       <div className="lg:hidden">

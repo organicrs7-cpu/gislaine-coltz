@@ -12,21 +12,20 @@ export const Hero: React.FC = () => {
     <section className="relative overflow-hidden bg-brand-surface" style={{ backgroundImage: 'url(/relaxante/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
       {/* ======================== MOBILE ======================== */}
-      <div className="lg:hidden">
-        {/* Foto com fade embaixo para brand-surface */}
-        <div className="relative w-full h-[420px] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-surface z-10" />
+      <div className="lg:hidden relative">
+        {/* Foto — sem container fixo, flui naturalmente sobre o bg */}
+        <div className="relative w-full h-[440px]">
           <img
             src="/relaxante/gislaine-66.png"
             alt="Gislaine Coltz"
             className="w-full h-full object-cover object-top"
             style={{
-              maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 78%, rgba(0,0,0,0) 100%)',
-              WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 78%, rgba(0,0,0,0) 100%)',
+              maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)',
             }}
           />
-          {/* Nome sobreposto */}
-          <div className="absolute bottom-0 left-0 right-0 z-20 text-center pb-3 px-4">
+          {/* Nome sobreposto na base da foto */}
+          <div className="absolute bottom-0 left-0 right-0 z-10 text-center pb-3 px-4">
             <h1 className="text-4xl font-bold tracking-tight leading-tight">
               <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(90deg, #9d6a6b, #cea29b, #9d6a6b)' }}>
                 GISLAINE COLTZ
@@ -40,8 +39,8 @@ export const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Texto abaixo */}
-        <div className="px-6 pt-4 pb-24 text-center">
+        {/* Texto abaixo — fundo levemente branco para equilibrar */}
+        <div className="px-6 pt-4 pb-24 text-center" style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.75) 20%, rgba(255,255,255,0.92) 100%)' }}>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full mb-5 border border-brand-soft shadow-sm">
             <Sparkles className="w-4 h-4 text-brand-primary" />
             <span className="text-brand-primary text-sm font-semibold tracking-wider uppercase">Curso Online Exclusivo</span>
@@ -51,7 +50,7 @@ export const Hero: React.FC = () => {
             <span className="text-brand-primary">experiência de alto valor</span>
           </p>
           <p className="text-sm text-gray-500 mb-6 leading-relaxed font-light">
-            Massagem Relaxante + Pedras Quentes com Protocolo Thai Spa — um método completo capaz de fidelizar clientes e aumentar seu faturamento.
+            Massagem Relaxante + Pedras Quentes com Protocolo Thai Spa — um método memorável que fideliza clientes e aumenta seu faturamento.
           </p>
           <ul className="space-y-3 text-left mb-8">
             {[

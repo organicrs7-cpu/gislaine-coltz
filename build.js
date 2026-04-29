@@ -34,7 +34,10 @@ try {
   
   // Build detox site
   buildAndCopy('detox', 'detox');
-  
+
+  // Build relaxante site
+  buildAndCopy('relaxante', 'relaxante');
+
   console.log('\n=== All sites built successfully into the /dist directory! ===\n');
 } catch (error) {
   console.error('\n=== Error during build ===\n', error);

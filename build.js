@@ -2,6 +2,16 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
+function copyStaticDir(sourceDir, destDir) {
+  const source = path.join(__dirname, sourceDir);
+  const destination = path.join(__dirname, 'dist', destDir);
+
+  if (!fs.existsSync(source)) return;
+
+  fs.mkdirSync(destination, { recursive: true });
+  fs.cpSync(source, destination, { recursive: true });
+}
+
 function buildAndCopy(projectDir, destDir) {
   console.log(`\n=== Building ${projectDir} ===\n`);
   execSync('npm install', { cwd: path.join(__dirname, projectDir), stdio: 'inherit' });
@@ -37,6 +47,9 @@ try {
 
   // Build relaxante site
   buildAndCopy('relaxante', 'relaxante');
+
+  // Copy static capture page to /captura
+  copyStaticDir('captura', 'captura');
 
   console.log('\n=== All sites built successfully into the /dist directory! ===\n');
 } catch (error) {

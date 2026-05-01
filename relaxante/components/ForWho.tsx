@@ -67,8 +67,16 @@ export const ForWho: React.FC = () => {
             viewport={{ once: true }}
             className="lg:w-1/2 relative rounded-3xl overflow-hidden bg-brand-dark text-white p-10 flex flex-col justify-between"
           >
-            {/* Orb */}
-            <div className="absolute top-0 right-0 w-56 h-56 bg-brand-secondary/20 rounded-full blur-[80px]" />
+            <video
+              className="absolute inset-0 h-full w-full object-cover opacity-35"
+              src="/relaxante/videos/relaxante-2.mov"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            />
+            <div className="absolute inset-0 bg-brand-dark/70" />
 
             <div className="relative z-10">
               <p className="text-xs uppercase tracking-[0.25em] text-brand-secondary font-bold mb-6">Não precisa de experiência</p>

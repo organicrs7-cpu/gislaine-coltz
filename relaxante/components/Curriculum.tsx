@@ -55,7 +55,16 @@ export const Curriculum: React.FC = () => {
             </p>
             {/* Destaque premium */}
             <div className="relative rounded-2xl overflow-hidden bg-brand-primary p-6 text-white">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full blur-2xl -mr-6 -mt-6" />
+              <video
+                className="absolute inset-0 h-full w-full object-cover opacity-30"
+                src="/relaxante/videos/relaxante-4.mov"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+              <div className="absolute inset-0 bg-brand-primary/75" />
               <div className="relative z-10">
                 <div className="mb-3 bg-white/20 inline-flex p-2 rounded-full">
                   <Star className="w-5 h-5 text-white" fill="currentColor" />

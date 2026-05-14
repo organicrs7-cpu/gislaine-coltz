@@ -83,7 +83,7 @@ export const Pricing: React.FC = () => {
                 <p className="text-gray-500">ou R$ 597,00 à vista</p>
               </div>
 
-              <a href="https://wa.me/5551993909150?text=Olá! Quero garantir minha vaga no curso de Massagem Relaxante com Pedras Quentes." target="_blank" rel="noopener noreferrer" className="w-full">
+              <a href="https://pay.cakto.com.br/t5kdzd8_866991" target="_blank" rel="noopener noreferrer" className="w-full">
                 <Button fullWidth className="py-5 text-lg shadow-brand-primary/40 animate-pulse">
                   GARANTIR MINHA VAGA
                 </Button>

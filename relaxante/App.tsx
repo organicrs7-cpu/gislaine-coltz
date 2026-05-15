@@ -4,6 +4,7 @@ import { PainPoints } from './components/PainPoints';
 import { Curriculum } from './components/Curriculum';
 import { ForWho } from './components/ForWho';
 import { About } from './components/About';
+import { ThailandMarquee } from './components/ThailandMarquee';
 import { Testimonials } from './components/Testimonials';
 import { Pricing } from './components/Pricing';
 import { Faq } from './components/Faq';
@@ -18,6 +19,7 @@ function App() {
         <Curriculum />
         <ForWho />
         <About />
+        <ThailandMarquee />
         <Testimonials />
         <Pricing />
         <Faq />

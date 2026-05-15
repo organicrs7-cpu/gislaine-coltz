@@ -78,9 +78,9 @@ export const Pricing: React.FC = () => {
               <div className="text-center mb-8">
                 <div className="flex items-center justify-center text-brand-dark gap-2 mb-1">
                   <span className="text-3xl font-medium">12x de</span>
-                  <span className="text-6xl font-bold tracking-tighter">61,67</span>
+                  <span className="text-6xl font-bold tracking-tighter">84,31</span>
                 </div>
-                <p className="text-gray-500">ou R$ 597,00 à vista</p>
+                <p className="text-gray-500">ou R$ 797,00 à vista</p>
               </div>
 
               <a href="https://pay.cakto.com.br/t5kdzd8_866991" target="_blank" rel="noopener noreferrer" className="w-full">

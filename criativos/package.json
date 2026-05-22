@@ -1,0 +1,10 @@
+{
+  "name": "gislaine-coltz-criativos",
+  "private": true,
+  "scripts": {
+    "export": "node export-png.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.43.1"
+  }
+}

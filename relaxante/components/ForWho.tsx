@@ -88,7 +88,7 @@ export const ForWho: React.FC = () => {
                   "Didática simples e objetiva",
                   "Demonstrações em modelo real",
                   "Protocolo pronto para aplicar",
-                  "Acesso imediato e vitalício",
+                  "Acesso imediato por 1 ano",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-white/70 text-sm">
                     <CheckCircle2 className="w-4 h-4 text-brand-secondary shrink-0" />

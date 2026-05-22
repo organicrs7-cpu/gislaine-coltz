@@ -83,7 +83,25 @@ const App: React.FC = () => {
         {/* Main Links Container */}
         <main className="px-5 space-y-6">
 
-          {/* 1. Card Drenagem Online */}
+          {/* 1. Card: Massagem Relaxante */}
+          <VisualLinkCard
+            type="course"
+            title="Massagem Relaxante"
+            subtitle="Pedras Quentes & Thai Spa"
+            buttonText="Garantir Vaga"
+            theme="peach"
+            imageUrl="/bio/images/card-relaxante.png"
+            badgeText="CURSO ONLINE"
+            extraContent={
+              <div className="flex flex-col">
+                <span className="text-[10px] opacity-70 line-through text-[#9d6a6b]">De R$ 597</span>
+                <span className="text-xs font-bold text-[#9d6a6b]">12x de R$ 31,42</span>
+              </div>
+            }
+            onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/relaxante")}
+          />
+
+          {/* 2. Card Drenagem Online */}
           <VisualLinkCard
             type="course"
             title="Curso de Drenagem"
@@ -92,15 +110,10 @@ const App: React.FC = () => {
             theme="peach"
             imageUrl="/bio/images/card-drenagem-new.png"
             badgeText="CURSO ONLINE"
-            extraContent={
-              <div className="flex flex-col">
-                <span className="text-[10px] font-bold text-[#9d6a6b] mb-1 bg-white/40 px-1.5 py-0.5 rounded w-fit">Use cupom: gi40 (40% OFF)</span>
-              </div>
-            }
             onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/")}
           />
 
-          {/* 2. Card: Detox na Manta Térmica */}
+          {/* 3. Card: Detox na Manta Térmica */}
           <VisualLinkCard
             type="course"
             title="Detox na Manta"

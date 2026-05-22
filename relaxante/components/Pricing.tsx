@@ -32,7 +32,7 @@ export const Pricing: React.FC = () => {
                     "Técnicas detalhadas de massagem relaxante",
                     "Aplicação correta das pedras quentes",
                     "Ritual Thai Spa completo (recepção + spa dos pés + finalização)",
-                    "Acesso imediato e vitalício"
+                    "Acesso imediato por 1 ano"
                   ].map((item, i) => (
                     <motion.div
                       key={i}
@@ -78,12 +78,12 @@ export const Pricing: React.FC = () => {
               <div className="text-center mb-8">
                 <div className="flex items-center justify-center text-brand-dark gap-2 mb-1">
                   <span className="text-3xl font-medium">12x de</span>
-                  <span className="text-6xl font-bold tracking-tighter">84,31</span>
+                  <span className="text-6xl font-bold tracking-tighter">31,42</span>
                 </div>
-                <p className="text-gray-500">ou R$ 797,00 à vista</p>
+                <p className="text-gray-500">ou R$ 297,00 à vista</p>
               </div>
 
-              <a href="https://pay.cakto.com.br/t5kdzd8_866991" target="_blank" rel="noopener noreferrer" className="w-full">
+              <a href="https://pay.cakto.com.br/az2c3p9" target="_blank" rel="noopener noreferrer" className="w-full">
                 <Button fullWidth className="py-5 text-lg shadow-brand-primary/40 animate-pulse">
                   GARANTIR MINHA VAGA
                 </Button>

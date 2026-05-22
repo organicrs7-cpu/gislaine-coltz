@@ -9,7 +9,7 @@ const faqItems = [
   },
   {
     question: "Por quanto tempo tenho acesso ao curso?",
-    answer: "O acesso é vitalício. Você pode assistir quantas vezes quiser, no seu ritmo."
+    answer: "Você terá acesso ao curso por 1 ano (12 meses). Durante esse período, poderá assistir a todas as aulas quantas vezes quiser, no seu ritmo."
   },
   {
     question: "Preciso comprar pedras quentes para começar?",

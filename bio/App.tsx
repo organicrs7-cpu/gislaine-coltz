@@ -69,14 +69,6 @@ const App: React.FC = () => {
                 </span>
               </h1>
             </div>
-
-            <div className="flex items-center justify-center gap-3 mt-2 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
-              <span className="h-[1px] w-8 bg-[#cea29b]"></span>
-              <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#5a5a5a] font-medium">
-                Estética de Alta Performance
-              </p>
-              <span className="h-[1px] w-8 bg-[#cea29b]"></span>
-            </div>
           </div>
         </header>
 

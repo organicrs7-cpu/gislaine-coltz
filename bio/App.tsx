@@ -83,7 +83,24 @@ const App: React.FC = () => {
         {/* Main Links Container */}
         <main className="px-5 space-y-6">
 
-          {/* 1. Card: Massagem Relaxante */}
+          {/* 1. Card: Curso Presencial São Paulo */}
+          <VisualLinkCard
+            type="course"
+            title="Curso São Paulo"
+            subtitle="Turma 25 e 26 de Julho"
+            buttonText="Garantir Vaga"
+            theme="dark"
+            imageUrl="/bio/images/card-cursos-new.png"
+            badgeText="VAGAS LIMITADAS"
+            extraContent={
+              <div className="flex flex-col">
+                <span className="text-xs font-semibold text-[#eaddd5]">Presencial - São Paulo</span>
+              </div>
+            }
+            onClick={() => handleNavigation("https://wa.me/5551999596176?text=Olá!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20Presencial%20de%20São%20Paulo%20nos%20dias%2025%20e%2026%20de%20julho.")}
+          />
+
+          {/* 2. Card: Massagem Relaxante */}
           <VisualLinkCard
             type="course"
             title="Massagem Relaxante"
@@ -101,7 +118,7 @@ const App: React.FC = () => {
             onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/relaxante")}
           />
 
-          {/* 2. Card Drenagem Online */}
+          {/* 3. Card Drenagem Online */}
           <VisualLinkCard
             type="course"
             title="Curso de Drenagem"
@@ -113,7 +130,7 @@ const App: React.FC = () => {
             onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/")}
           />
 
-          {/* 3. Card: Detox na Manta Térmica */}
+          {/* 4. Card: Detox na Manta Térmica */}
           <VisualLinkCard
             type="course"
             title="Detox na Manta"
@@ -148,7 +165,7 @@ const App: React.FC = () => {
             onClick={() => handleNavigation("https://pay.cakto.com.br/hgbejhd_310583")}
           />
 
-          {/* 3. Card: Cursos Presenciais */}
+          {/* 5. Card: Cursos Presenciais */}
           <VisualLinkCard
             type="course"
             title="Cursos Presenciais"
@@ -160,7 +177,7 @@ const App: React.FC = () => {
             onClick={() => handleNavigation(WHATSAPP_LINK)}
           />
 
-          {/* 4. Card: Agendar Atendimento */}
+          {/* 6. Card: Agendar Atendimento */}
           <VisualLinkCard
             type="booking"
             title="Agendar Sessão"

@@ -48,6 +48,9 @@ try {
   // Build relaxante site
   buildAndCopy('relaxante', 'relaxante');
 
+  // Build clinica site
+  buildAndCopy('clinica', 'clinica');
+
   // Copy static capture page to /captura
   copyStaticDir('captura', 'captura');
 

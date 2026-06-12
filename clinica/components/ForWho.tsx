@@ -88,7 +88,7 @@ export const ForWho: React.FC = () => {
                   "Foco em anatomia palpatória aplicada",
                   "Passo a passo visual e didático",
                   "Preservação física do terapeuta",
-                  "Material de apoio em PDF",
+                  "Certificado de conclusão incluso",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-white/70 text-sm">
                     <CheckCircle2 className="w-4 h-4 text-brand-secondary shrink-0" />

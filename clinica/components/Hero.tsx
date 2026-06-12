@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
             Curso <span className="text-brand-primary">Piriforme na Prática</span>: Descompressão sem dor
           </p>
           <p className="text-sm text-gray-500 mb-6 leading-relaxed font-light">
-            Aprenda a diagnosticar e tratar de forma definitiva a Síndrome do Piriforme e a Ciatalgia usando liberação miofascial profunda e o poder relaxante das Pedras Quentes.
+            Aprenda a diagnosticar e tratar de forma definitiva a Síndrome do Piriforme usando liberação miofascial profunda e o poder relaxante das Pedras Quentes.
           </p>
           <ul className="space-y-3 text-left mb-8">
             {[
@@ -106,7 +106,7 @@ export const Hero: React.FC = () => {
               </h1>
 
               <p className="text-base text-gray-500 mb-8 leading-relaxed font-light">
-                Descubra o passo a passo clínico para diagnosticar com precisão a Ciatalgia e a Síndrome do Piriforme, aplicando descompressões profundas e manobras avançadas que eliminam a dor do seu paciente desde a primeira sessão.
+                Descubra o passo a passo clínico para diagnosticar com precisão a Síndrome do Piriforme, aplicando descompressões profundas e manobras avançadas que eliminam a dor do seu paciente desde a primeira sessão.
               </p>
 
               <div className="flex items-center gap-4 mb-8">

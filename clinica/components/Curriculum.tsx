@@ -31,7 +31,7 @@ const steps = [
     num: "05",
     icon: ShieldCheck,
     title: "Mobilizações e Ajustes do Quadril",
-    desc: "O ciático e o piriforme estão sempre associados a disfunções de mobilidade. Aprenda ajustes articulares manuais do quadril e a liberação do músculo psoas para uma melhora definitiva."
+    desc: "O ciático e o piriforme estão sempre associados a disfunções de mobilidade. Aprenda ajustes articulares manuais do quadril para uma melhora definitiva."
   },
 ];
 

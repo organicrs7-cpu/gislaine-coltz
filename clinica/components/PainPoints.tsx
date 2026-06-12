@@ -15,7 +15,7 @@ export const PainPoints: React.FC = () => {
     {
       icon: ShieldAlert,
       title: "Medo de Machucar o Cliente?",
-      text: "O piriforme inflamado é extremamente sensível. Se você aplicar pressão bruta (como enfiar o cotovelo ou polegar forte), causará mais dor e gerará um trauma físico no seu cliente."
+      text: "O piriforme inflamado é extremamente sensível. Se você aplicar pressão bruta (como o cotovelo ou polegar forte), causará mais dor, que gera trauma e mais dor no paciente."
     },
     {
       icon: Activity,
@@ -84,7 +84,7 @@ export const PainPoints: React.FC = () => {
               A massoterapia clínica sem dor é um protocolo inteligente de descompressão.
             </h3>
             <p className="text-brand-soft text-base font-light max-w-2xl mx-auto leading-relaxed">
-              Ao usar o calor terapêutico das <strong className="text-white font-semibold">Pedras Quentes</strong> para amolecer a musculatura superficial antes de ir profundo, você acessa o piriforme de forma confortável, entregando alívio imediato e preservando suas articulações.
+              Ao usar o calor terapêutico das <strong className="text-white font-semibold">Pedras Quentes</strong> para soltar a musculatura superficial antes de conseguir aprofundar o toque, você acessa o piriforme de forma confortável, entregando alívio imediato e preservando suas articulações.
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useInView } from '../hooks/useInView';
 
 const faqItems = [
   {
@@ -31,6 +31,7 @@ const faqItems = [
 
 export const Faq: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const { ref, isInView } = useInView();
 
   return (
     <section className="py-24 bg-brand-surface relative overflow-hidden" id="faq">
@@ -59,19 +60,20 @@ export const Faq: React.FC = () => {
           </div>
 
           {/* Accordion à direita */}
-          <div className="lg:w-2/3 space-y-3">
+          <div className="lg:w-2/3 space-y-3" ref={ref}>
             {faqItems.map((item, idx) => (
-              <motion.div
+              <div
                 key={idx}
-                initial={{ opacity: 0, y: 8 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.06 }}
                 className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
                   openIndex === idx
                     ? 'border-brand-primary/40 bg-white shadow-md shadow-brand-soft/30'
                     : 'border-brand-soft/40 bg-white/60 hover:border-brand-primary/20'
                 }`}
+                style={{
+                  opacity: isInView ? 1 : 0,
+                  transform: isInView ? 'translateY(0)' : 'translateY(8px)',
+                  transition: `opacity 0.4s ease ${idx * 0.06}s, transform 0.4s ease ${idx * 0.06}s, border-color 0.3s, background-color 0.3s, box-shadow 0.3s`,
+                }}
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
@@ -89,21 +91,12 @@ export const Faq: React.FC = () => {
                     }
                   </div>
                 </button>
-                <AnimatePresence>
-                  {openIndex === idx && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <div className="px-6 pb-6 text-gray-500 text-sm leading-relaxed border-t border-brand-soft/30 pt-4 font-light">
-                        {item.answer}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
+                <div style={{ maxHeight: openIndex === idx ? '500px' : '0', overflow: 'hidden', transition: 'max-height 0.3s ease, opacity 0.3s ease', opacity: openIndex === idx ? 1 : 0 }}>
+                  <div className="px-6 pb-6 text-gray-500 text-sm leading-relaxed border-t border-brand-soft/30 pt-4 font-light">
+                    {item.answer}
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>

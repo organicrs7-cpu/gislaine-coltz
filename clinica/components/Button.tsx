@@ -1,8 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { motion, HTMLMotionProps } from 'framer-motion';
 
-interface ButtonProps extends HTMLMotionProps<"button"> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline';
   fullWidth?: boolean;
   children: React.ReactNode;
@@ -15,7 +14,7 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseStyles = "inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-medium transition-all duration-300 text-base shadow-lg";
+  const baseStyles = "inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-medium transition-all duration-300 text-base shadow-lg hover:scale-[1.02] active:scale-[0.98]";
 
   const variants = {
     primary: "bg-brand-primary text-white hover:bg-opacity-90 hover:shadow-brand-primary/30 border border-transparent",
@@ -26,14 +25,12 @@ export const Button: React.FC<ButtonProps> = ({
   const widthClass = fullWidth ? "w-full" : "";
 
   return (
-    <motion.button
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
+    <button
       className={`${baseStyles} ${variants[variant]} ${widthClass} ${className}`}
       {...props}
     >
       {children}
       <ArrowRight className="w-5 h-5 ml-1" />
-    </motion.button>
+    </button>
   );
 };

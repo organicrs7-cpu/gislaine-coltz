@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Flame, Stethoscope, Move3d, Compass, Video } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useInView } from '../hooks/useInView';
 
 const steps = [
   {
@@ -36,6 +36,8 @@ const steps = [
 ];
 
 export const Curriculum: React.FC = () => {
+  const { ref, isInView } = useInView();
+
   return (
     <section className="py-24 bg-brand-surface relative overflow-hidden" id="curriculum">
       {/* Orb decorativo */}
@@ -69,19 +71,20 @@ export const Curriculum: React.FC = () => {
           </div>
 
           {/* Steps — lista vertical com linha timeline */}
-          <div className="lg:w-2/3 relative">
+          <div className="lg:w-2/3 relative" ref={ref}>
             {/* Linha vertical */}
             <div className="absolute left-[23px] top-2 bottom-2 w-px bg-gradient-to-b from-brand-soft via-brand-secondary to-transparent hidden md:block" />
 
             <div className="space-y-6">
               {steps.map((item, idx) => (
-                <motion.div
+                <div
                   key={idx}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
                   className="group relative flex items-start gap-6 bg-white rounded-2xl p-6 border border-brand-soft/40 hover:border-brand-primary/40 hover:shadow-lg hover:shadow-brand-soft/30 transition-all duration-300"
+                  style={{
+                    opacity: isInView ? 1 : 0,
+                    transform: isInView ? 'translateX(0)' : 'translateX(20px)',
+                    transition: `opacity 0.5s ease ${idx * 0.1}s, transform 0.5s ease ${idx * 0.1}s`,
+                  }}
                 >
                   {/* Número / dot da timeline */}
                   <div className="shrink-0 w-12 h-12 rounded-full bg-brand-soft flex items-center justify-center border-2 border-white shadow-sm group-hover:bg-brand-primary group-hover:border-brand-primary transition-colors duration-300 relative z-10">
@@ -94,7 +97,7 @@ export const Curriculum: React.FC = () => {
                     <h3 className="text-base font-bold text-brand-dark mt-0.5 mb-2">{item.title}</h3>
                     <p className="text-gray-500 text-sm leading-relaxed font-light">{item.desc}</p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>

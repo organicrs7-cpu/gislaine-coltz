@@ -1,8 +1,11 @@
 import React from 'react';
 import { Star, Award, Gem, Flame, ShieldCheck, CheckCircle2 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useInView } from '../hooks/useInView';
 
 export const ForWho: React.FC = () => {
+  const { ref: cardsRef, isInView: cardsVisible } = useInView();
+  const { ref: panelRef, isInView: panelVisible } = useInView();
+
   const profiles = [
     {
       icon: Award,
@@ -41,31 +44,35 @@ export const ForWho: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-12 items-stretch max-w-5xl mx-auto">
 
           {/* Cards à esquerda */}
-          <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div ref={cardsRef} className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {profiles.map((p, idx) => (
-              <motion.div
+              <div
                 key={idx}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
                 className="group flex flex-col gap-3 p-6 rounded-2xl bg-brand-surface border border-brand-soft/30 hover:border-brand-primary/30 hover:shadow-lg hover:shadow-brand-soft/30 transition-all duration-300"
+                style={{
+                  opacity: cardsVisible ? 1 : 0,
+                  transform: cardsVisible ? 'translateY(0)' : 'translateY(16px)',
+                  transition: `opacity 0.5s ease ${idx * 0.1}s, transform 0.5s ease ${idx * 0.1}s`,
+                }}
               >
                 <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-brand-primary shadow-sm group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300 shrink-0">
                   <p.icon className="w-5 h-5" />
                 </div>
                 <h3 className="font-bold text-brand-dark text-base">{p.title}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed font-light">{p.text}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* Painel direito — destaque */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+          <div
+            ref={panelRef}
             className="lg:w-1/2 relative rounded-3xl overflow-hidden bg-brand-dark text-white p-10 flex flex-col justify-between"
+            style={{
+              opacity: panelVisible ? 1 : 0,
+              transform: panelVisible ? 'translateX(0)' : 'translateX(20px)',
+              transition: 'opacity 0.6s ease, transform 0.6s ease',
+            }}
           >
             <div className="absolute inset-0 bg-brand-dark" />
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/20 rounded-full blur-3xl -mr-16 -mt-16" />
@@ -99,7 +106,7 @@ export const ForWho: React.FC = () => {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

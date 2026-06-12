@@ -1,23 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from './Button';
 import { CheckCircle2, Sparkles } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 export const Hero: React.FC = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   const scrollToPricing = () => {
     document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="relative overflow-hidden bg-brand-surface" style={{ backgroundImage: 'url(/clinica/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section className="relative overflow-hidden bg-brand-surface" style={{ backgroundImage: 'url(/clinica/hero-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
       {/* ======================== MOBILE ======================== */}
       <div className="lg:hidden relative">
         {/* Foto — flui naturalmente sobre o bg */}
         <div className="relative w-full h-[440px]">
           <img
-            src="/clinica/gislaine-66.png"
+            src="/clinica/gislaine-66.webp"
             alt="Gislaine Coltz"
+            fetchPriority="high"
             className="w-full h-full object-cover object-top"
             style={{
               maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)',
@@ -75,21 +81,25 @@ export const Hero: React.FC = () => {
 
           {/* Coluna esquerda — texto */}
           <div className="flex items-center pr-8" style={{ width: '55%' }}>
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+            <div
               className="w-full text-left py-20"
+              style={{
+                opacity: isLoaded ? 1 : 0,
+                transform: isLoaded ? 'translateX(0)' : 'translateX(-30px)',
+                transition: 'opacity 0.8s ease-out, transform 0.8s ease-out',
+              }}
             >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
+              <div
                 className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full mb-6 border border-brand-soft shadow-sm"
+                style={{
+                  opacity: isLoaded ? 1 : 0,
+                  transform: isLoaded ? 'translateY(0)' : 'translateY(20px)',
+                  transition: 'opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s',
+                }}
               >
                 <Sparkles className="w-4 h-4 text-brand-primary" />
                 <span className="text-brand-primary text-sm font-semibold tracking-wider uppercase">Método Prático e Clínico</span>
-              </motion.div>
+              </div>
 
               <h1 className="text-4xl xl:text-5xl font-bold text-brand-dark leading-tight mb-4">
                 Curso <span className="text-brand-primary">Piriforme na Prática</span> — Descompressão sem sofrimento
@@ -107,7 +117,7 @@ export const Hero: React.FC = () => {
                   <div className="flex -space-x-2">
                     {[1, 2, 3].map(i => (
                       <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-brand-accent overflow-hidden">
-                        <img src={`https://picsum.photos/seed/aluna-clinica${i}/100/100`} alt="aluna" className="w-full h-full object-cover opacity-80" />
+                        <img src={`https://picsum.photos/seed/aluna-clinica${i}/100/100`} alt="aluna" className="w-full h-full object-cover opacity-80" loading="lazy" />
                       </div>
                     ))}
                   </div>
@@ -121,31 +131,39 @@ export const Hero: React.FC = () => {
                   "Descompressão com pedras quentes: o calor que relaxa e abre caminho para o alívio",
                   "Libere o piriforme, tensor da fáscia lata e bursa sem cansar suas mãos"
                 ].map((item, index) => (
-                  <motion.li
+                  <li
                     key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.5 + index * 0.1 }}
                     className="flex items-center gap-3 text-gray-700"
+                    style={{
+                      opacity: isLoaded ? 1 : 0,
+                      transform: isLoaded ? 'translateX(0)' : 'translateX(-20px)',
+                      transition: `opacity 0.5s ease ${0.5 + index * 0.1}s, transform 0.5s ease ${0.5 + index * 0.1}s`,
+                    }}
                   >
                     <CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0" />
                     <span>{item}</span>
-                  </motion.li>
+                  </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
           </div>
 
           {/* Coluna direita — foto colada na base */}
           <div className="flex items-end justify-end" style={{ width: '45%' }}>
-            <motion.img
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-              src="/clinica/gislaine-66.png"
+            <img
+              src="/clinica/gislaine-66.webp"
               alt="Gislaine Coltz"
+              fetchPriority="high"
               className="object-contain object-bottom select-none"
-              style={{ maxHeight: '94vh', width: 'auto', maxWidth: '100%', display: 'block' }}
+              style={{
+                maxHeight: '94vh',
+                width: 'auto',
+                maxWidth: '100%',
+                display: 'block',
+                opacity: isLoaded ? 1 : 0,
+                transform: isLoaded ? 'translateX(0)' : 'translateX(40px)',
+                transition: 'opacity 0.9s ease-out, transform 0.9s ease-out',
+              }}
               draggable={false}
             />
           </div>

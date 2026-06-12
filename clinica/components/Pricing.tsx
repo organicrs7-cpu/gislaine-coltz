@@ -1,9 +1,13 @@
 import React from 'react';
 import { Button } from './Button';
 import { Check, ShieldCheck, Lock, CreditCard, Smartphone } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useInView } from '../hooks/useInView';
 
 export const Pricing: React.FC = () => {
+  const { ref: leftRef, isInView: leftVisible } = useInView({ rootMargin: '-100px' });
+  const { ref: rightRef, isInView: rightVisible } = useInView({ rootMargin: '-100px' });
+  const { ref: footerRef, isInView: footerVisible } = useInView();
+
   return (
     <section id="pricing" className="py-24 bg-white relative">
       <div className="absolute top-1/2 left-0 w-full h-1/2 bg-brand-surface -skew-y-3 z-0"></div>
@@ -11,12 +15,14 @@ export const Pricing: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+            <div
+              ref={leftRef}
               className="bg-brand-primary text-white p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden flex flex-col justify-between"
+              style={{
+                opacity: leftVisible ? 1 : 0,
+                transform: leftVisible ? 'translateY(0)' : 'translateY(40px)',
+                transition: 'opacity 0.7s ease-out, transform 0.7s ease-out',
+              }}
             >
               <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full blur-[80px] -mr-16 -mt-16"></div>
 
@@ -35,19 +41,20 @@ export const Pricing: React.FC = () => {
                     "Certificado do Método Piriforme na Prática",
                     "Acesso imediato e suporte para dúvidas"
                   ].map((item, i) => (
-                    <motion.div
+                    <div
                       key={i}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.3 + (i * 0.1) }}
                       className="flex items-center gap-4"
+                      style={{
+                        opacity: leftVisible ? 1 : 0,
+                        transform: leftVisible ? 'translateX(0)' : 'translateX(-20px)',
+                        transition: `opacity 0.4s ease ${0.3 + i * 0.1}s, transform 0.4s ease ${0.3 + i * 0.1}s`,
+                      }}
                     >
                       <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                         <Check className="w-4 h-4 text-white" />
                       </div>
                       <span className="text-brand-surface font-light text-sm">{item}</span>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -61,14 +68,16 @@ export const Pricing: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+            <div
+              ref={rightRef}
               className="bg-white p-10 rounded-[2.5rem] shadow-xl border border-gray-100 flex flex-col justify-center"
+              style={{
+                opacity: rightVisible ? 1 : 0,
+                transform: rightVisible ? 'translateY(0)' : 'translateY(40px)',
+                transition: 'opacity 0.7s ease-out 0.2s, transform 0.7s ease-out 0.2s',
+              }}
             >
               <div className="text-center mb-8">
                 <span className="bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
@@ -100,18 +109,19 @@ export const Pricing: React.FC = () => {
                   <Smartphone className="w-6 h-6" />
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.8 }}
+          <p
+            ref={footerRef}
             className="text-center text-gray-500 mt-12 text-sm max-w-2xl mx-auto font-light"
+            style={{
+              opacity: footerVisible ? 1 : 0,
+              transition: 'opacity 0.6s ease 0.8s',
+            }}
           >
             Ao final do curso, você dominará o raciocínio clínico necessário para se tornar a profissional mais resolutiva da sua região, sabendo diagnosticar com <strong className="text-brand-primary font-semibold">segurança</strong> e tratar com <strong className="text-brand-primary font-semibold">conforto</strong>.
-          </motion.p>
+          </p>
         </div>
       </div>
     </section>

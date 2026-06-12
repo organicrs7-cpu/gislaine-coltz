@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useInView } from '../hooks/useInView';
 
 interface Testimonial {
   name: string;
@@ -50,6 +50,7 @@ const testimonialsData: Testimonial[] = [
 
 export const Testimonials: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const { ref: sectionRef, isInView } = useInView();
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -74,7 +75,7 @@ export const Testimonials: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-6xl mx-auto" ref={sectionRef}>
           {/* Botões de navegação */}
           <button
             onClick={() => scroll('left')}
@@ -89,13 +90,14 @@ export const Testimonials: React.FC = () => {
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {testimonialsData.map((item, idx) => (
-              <motion.div
+              <div
                 key={idx}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.05 }}
                 className="shrink-0 w-[300px] md:w-[360px] snap-center bg-brand-surface rounded-3xl p-8 border border-brand-soft/40 shadow-sm hover:shadow-md transition-shadow duration-300 relative flex flex-col justify-between"
+                style={{
+                  opacity: isInView ? 1 : 0,
+                  transform: isInView ? 'scale(1)' : 'scale(0.95)',
+                  transition: `opacity 0.5s ease ${idx * 0.05}s, transform 0.5s ease ${idx * 0.05}s`,
+                }}
               >
                 <div className="absolute top-6 right-8 text-brand-soft/40">
                   <Quote className="w-10 h-10 rotate-180" />
@@ -109,7 +111,7 @@ export const Testimonials: React.FC = () => {
                   </div>
 
                   <p className="text-gray-600 text-sm leading-relaxed mb-6 font-light">
-                    "{item.text}"
+                    &quot;{item.text}&quot;
                   </p>
                 </div>
 
@@ -122,7 +124,7 @@ export const Testimonials: React.FC = () => {
                     <p className="text-gray-400 text-xs">{item.role}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 

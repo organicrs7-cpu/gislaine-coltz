@@ -75,7 +75,25 @@ const App: React.FC = () => {
         {/* Main Links Container */}
         <main className="px-5 space-y-6">
 
-          {/* 1. Card: Curso Presencial São Paulo */}
+          {/* 1. Card: Piriforme na Prática */}
+          <VisualLinkCard
+            type="course"
+            title="Piriforme na Prática"
+            subtitle="Descompressão sem Dor"
+            buttonText="Garantir Vaga"
+            theme="dark"
+            imageUrl="/bio/images/card-piriforme.webp"
+            badgeText="NOVIDADE"
+            extraContent={
+              <div className="flex flex-col">
+                <span className="text-[10px] opacity-70 line-through text-[#eaddd5]">De R$ 197</span>
+                <span className="text-xs font-bold text-[#eaddd5]">12x de R$ 10,27</span>
+              </div>
+            }
+            onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/clinica")}
+          />
+
+          {/* 2. Card: Curso Presencial São Paulo */}
           <VisualLinkCard
             type="course"
             title="Curso São Paulo"

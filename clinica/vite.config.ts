@@ -19,6 +19,10 @@ export default defineConfig({
     cssMinify: true,
     minify: 'esbuild',
     rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+        obrigado: path.resolve(__dirname, 'obrigado.html'),
+      },
       output: {
         manualChunks: undefined,
       },

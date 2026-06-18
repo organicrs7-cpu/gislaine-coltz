@@ -8,8 +8,17 @@ import { Testimonials } from './components/Testimonials';
 import { Pricing } from './components/Pricing';
 import { Faq } from './components/Faq';
 import { Footer } from './components/Footer';
+import { Obrigado } from './components/Obrigado';
 
 function App() {
+  const isObrigado = window.location.pathname.includes('obrigado') || 
+                     window.location.search.includes('obrigado') || 
+                     window.location.hash.includes('obrigado');
+
+  if (isObrigado) {
+    return <Obrigado />;
+  }
+
   return (
     <div className="min-h-screen font-sans bg-brand-surface selection:bg-brand-soft selection:text-brand-dark">
       <main>

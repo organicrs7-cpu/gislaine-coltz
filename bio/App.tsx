@@ -93,6 +93,24 @@ const App: React.FC = () => {
             onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/clinica")}
           />
 
+          {/* 1b. Card: Tabela de Testes Neurológicos e Ortopédicos */}
+          <VisualLinkCard
+            type="course"
+            title="Tabela de Testes"
+            subtitle="Neurológicos & Ortopédicos"
+            buttonText="Garantir Acesso"
+            theme="peach"
+            imageUrl="/bio/images/card-tabela-testes.webp"
+            badgeText="+30 TESTES CLÍNICOS"
+            extraContent={
+              <div className="flex flex-col">
+                <span className="text-xs font-bold text-[#9d6a6b]">9x de R$ 5,05</span>
+                <span className="text-[10px] text-[#9d6a6b]/80">ou R$ 37,00 à vista</span>
+              </div>
+            }
+            onClick={() => handleNavigation("https://pay.cakto.com.br/nfrnxtn_932472")}
+          />
+
           {/* 2. Card: Curso Presencial São Paulo */}
           <VisualLinkCard
             type="course"

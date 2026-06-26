@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #9d6a6b;
+  --color-brand-soft: #eaddd5;
+  --color-brand-secondary: #cea29b;
+  --color-brand-surface: #f6f5f2;
+  --color-brand-accent: #d8d4c9;
+  --color-brand-dark: #4a2e2f;
+  --font-sans: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Scroll-triggered animation classes */
+.animate-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.animate-hidden-x {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.animate-hidden-x-right {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.animate-hidden-scale {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.animate-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}

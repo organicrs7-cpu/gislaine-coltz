@@ -51,6 +51,9 @@ try {
   // Build clinica site
   buildAndCopy('clinica', 'clinica');
 
+  // Build testes site
+  buildAndCopy('testes', 'testes');
+
   // Copy static capture page to /captura
   copyStaticDir('captura', 'captura');
 

@@ -10,7 +10,7 @@ export const Pricing: React.FC = () => {
     "Guia Digital completo (+30 testes)",
     "Passo a passo visual e ilustrado",
     "Indicação e diagnóstico rápido",
-    "Acesso vitalício no celular/computador",
+    "Acesso digital no celular/computador",
     "Suporte exclusivo via e-mail/WhatsApp",
     "Download imediato pós-pagamento"
   ];

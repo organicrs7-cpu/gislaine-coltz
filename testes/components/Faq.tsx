@@ -21,7 +21,7 @@ export const Faq: React.FC = () => {
     },
     {
       q: "O pagamento é único ou mensal?",
-      a: "O pagamento é único. Você paga apenas R$ 37,00 (ou parcelado) e tem acesso vitalício à tabela e a qualquer atualização futura do material, sem nenhuma mensalidade ou taxa recorrente."
+      a: "O pagamento é único. Você paga apenas R$ 37,00 (ou parcelado) e tem acesso completo à tabela e a qualquer atualização futura do material, sem nenhuma mensalidade ou taxa recorrente."
     },
     {
       q: "E se eu não gostar do material?",

@@ -108,7 +108,7 @@ const App: React.FC = () => {
                 <span className="text-[10px] text-[#9d6a6b]/80">ou R$ 37,00 à vista</span>
               </div>
             }
-            onClick={() => handleNavigation("https://pay.cakto.com.br/nfrnxtn_932472")}
+            onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/testes")}
           />
 
           {/* 2. Card: Curso Presencial São Paulo */}

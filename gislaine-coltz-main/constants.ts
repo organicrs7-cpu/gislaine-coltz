@@ -3,7 +3,7 @@ import { Feature, Module, FaqItem, Testimonial } from './types';
 
 // Images provided by user
 export const IMAGES = {
-  hero: "/images/gislaine-hero.png", // New hero image
+  hero: "/images/gislaine-jaleco.webp",
   bio: "/images/gislaine-2.png", // Beige blazer - Approachable
   logo: "/images/logo-v2.png", // White text logo
   texture: "https://images.unsplash.com/photo-1517816428104-797678c7cf0c?q=80&w=2940&auto=format&fit=crop" // Elegant texture background

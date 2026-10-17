@@ -75,10 +75,6 @@ export const Hero: React.FC = () => {
               <CheckCircle2 className="w-5 h-5 text-gc-gold" />
               <span>Certificação Internacional Inclusa</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-500">
-              <CheckCircle2 className="w-5 h-5 text-gc-gold" />
-              <span>Acesso vitalício ao conteúdo gravado</span>
-            </div>
           </div>
         </div>
 

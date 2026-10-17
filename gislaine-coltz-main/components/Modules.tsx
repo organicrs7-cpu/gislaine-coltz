@@ -23,11 +23,10 @@ export const Modules: React.FC = () => {
                 Um treinamento completo, do básico ao avançado, estruturado para você ter segurança em cada atendimento.
               </p>
               <div className="p-6 bg-white rounded-2xl shadow-sm border border-gc-primary">
-                <div className="flex items-center gap-3 mb-2">
+                <div className="flex items-center gap-3">
                   <BookOpen className="text-gc-dark w-6 h-6" />
                   <span className="font-bold text-gc-text">Certificado Incluso</span>
                 </div>
-                <p className="text-sm text-gray-500">60 horas de carga horária válida em todo território nacional.</p>
               </div>
             </div>
           </div>

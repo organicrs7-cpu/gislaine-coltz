@@ -50,14 +50,14 @@ export const Hero: React.FC = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gc-text leading-tight text-center lg:text-left">
-            Domine a Arte da <span className="text-gc-dark relative">
-              Drenagem Linfática
+            Pare de cobrar pouco. Aprenda a Drenagem que pode valer <span className="text-gc-dark relative">
+              até R$ 200 por sessão
               <Sparkles className="absolute -top-2 -right-6 w-5 h-5 text-gc-gold animate-pulse" />
             </span>
           </h1>
 
           <p className="text-lg text-gray-600 leading-relaxed max-w-lg text-center lg:text-left">
-            Aprenda o método exclusivo com certificação internacional que vai transformar sua carreira e fidelizar seus clientes logo na primeira sessão.
+            Método com certificação internacional que posiciona você como especialista e faz a cliente voltar.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">

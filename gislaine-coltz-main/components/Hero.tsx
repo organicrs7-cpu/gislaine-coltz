@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Button onClick={() => window.open('https://pay.cakto.com.br/3f9wss5', '_blank')}>
+            <Button onClick={() => document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' })}>
               Quero Garantir Minha Vaga
             </Button>
             <button onClick={scrollToModules} className="flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-gray-300 text-gray-600 font-medium bg-white/50 backdrop-blur-sm hover:bg-white hover:text-gc-dark hover:border-gc-dark transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl active:scale-95">

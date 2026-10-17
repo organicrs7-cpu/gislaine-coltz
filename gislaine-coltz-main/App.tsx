@@ -39,7 +39,9 @@ function App() {
         <Modules />
       </div>
 
-      <ExtendedTestimonials />
+      <div id="depoimentos">
+        <ExtendedTestimonials />
+      </div>
       <BonusShowcase />
       <Pricing />
       <div id="faq">

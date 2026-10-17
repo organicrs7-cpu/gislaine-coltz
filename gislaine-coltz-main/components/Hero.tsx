@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
 
           <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-gc-text leading-tight text-center lg:text-left">
             Pare de cobrar pouco. Aprenda a Drenagem que pode valer <span className="text-gc-dark relative">
-              até R$ 200 por sessão
+              até R$&nbsp;200 por sessão
               <Sparkles className="absolute -top-2 -right-6 w-5 h-5 text-gc-gold animate-pulse" />
             </span>
           </h1>

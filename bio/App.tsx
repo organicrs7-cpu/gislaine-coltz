@@ -75,6 +75,18 @@ const App: React.FC = () => {
         {/* Main Links Container */}
         <main className="px-5 space-y-6">
 
+          {/* 3. Card Drenagem Online */}
+          <VisualLinkCard
+            type="course"
+            title="Curso de Drenagem"
+            subtitle="Método Exclusivo"
+            buttonText="Saiba Mais"
+            theme="peach"
+            imageUrl="/bio/images/card-drenagem-new.png"
+            badgeText="CURSO ONLINE"
+            onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/")}
+          />
+
           {/* 1. Card: Piriforme na Prática */}
           <VisualLinkCard
             type="course"
@@ -115,7 +127,7 @@ const App: React.FC = () => {
           <VisualLinkCard
             type="course"
             title="Curso São Paulo"
-            subtitle="Turma 25 e 26 de Julho"
+            subtitle="Formação Presencial"
             buttonText="Garantir Vaga"
             theme="dark"
             imageUrl="/bio/images/card-cursos-new.png"
@@ -125,7 +137,7 @@ const App: React.FC = () => {
                 <span className="text-xs font-semibold text-[#eaddd5]">Presencial - São Paulo</span>
               </div>
             }
-            onClick={() => handleNavigation("https://wa.me/5551999596176?text=Olá!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20Presencial%20de%20São%20Paulo%20nos%20dias%2025%20e%2026%20de%20julho.")}
+            onClick={() => handleNavigation("https://wa.me/5551999596176?text=Olá!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20Presencial%20de%20São%20Paulo.")}
           />
 
           {/* 2. Card: Massagem Relaxante */}
@@ -144,18 +156,6 @@ const App: React.FC = () => {
               </div>
             }
             onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/relaxante")}
-          />
-
-          {/* 3. Card Drenagem Online */}
-          <VisualLinkCard
-            type="course"
-            title="Curso de Drenagem"
-            subtitle="Método Exclusivo"
-            buttonText="Saiba Mais"
-            theme="peach"
-            imageUrl="/bio/images/card-drenagem-new.png"
-            badgeText="CURSO ONLINE"
-            onClick={() => handleNavigation("https://gislaine-coltz.vercel.app/")}
           />
 
           {/* 4. Card: Detox na Manta Térmica */}

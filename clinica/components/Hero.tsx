@@ -52,16 +52,16 @@ export const Hero: React.FC = () => {
             <span className="text-brand-primary text-sm font-semibold tracking-wider uppercase">Método Prático e Clínico</span>
           </div>
           <p className="text-xl font-bold text-brand-dark mb-3 leading-tight">
-            Curso <span className="text-brand-primary">Piriforme na Prática</span>: Descompressão sem dor
+            Saiba em minutos se é piriforme ou ciático. <span className="text-brand-primary">E trate sem dor.</span>
           </p>
           <p className="text-sm text-gray-500 mb-6 leading-relaxed font-light">
-            Aprenda a diagnosticar e tratar de forma definitiva a Síndrome do Piriforme usando liberação miofascial profunda e o poder relaxante das Pedras Quentes.
+            O protocolo clínico da Gi, com pedras quentes, para você resolver o caso que outros profissionais não resolvem.
           </p>
           <ul className="space-y-3 text-left mb-8">
             {[
-              "Diferenciação exata entre Ciatalgia e Piriforme",
-              "Protocolo Sem Dor: O segredo das pedras quentes",
-              "Liberação miofascial clínica sem desgaste físico"
+              "Diagnóstico diferencial passo a passo",
+                "Protocolo sem dor com pedras quentes",
+                "Liberação sem cansar suas mãos"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-3 text-gray-700 text-sm">
                 <CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0" />
@@ -102,11 +102,11 @@ export const Hero: React.FC = () => {
               </div>
 
               <h1 className="text-4xl xl:text-5xl font-bold text-brand-dark leading-tight mb-4">
-                Curso <span className="text-brand-primary">Piriforme na Prática</span> — Descompressão sem sofrimento
+                Saiba em minutos se é piriforme ou ciático. <span className="text-brand-primary">E trate sem dor.</span>
               </h1>
 
               <p className="text-base text-gray-500 mb-8 leading-relaxed font-light">
-                Descubra o passo a passo clínico para diagnosticar com precisão a Síndrome do Piriforme, aplicando descompressões profundas e manobras avançadas que eliminam a dor do seu paciente desde a primeira sessão.
+                O protocolo clínico da Gi, com pedras quentes, para você resolver o caso que outros profissionais não resolvem.
               </p>
 
               <div className="flex items-center gap-4 mb-8">
@@ -114,22 +114,16 @@ export const Hero: React.FC = () => {
                   Quero Dominar Esse Protocolo
                 </Button>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <div className="flex -space-x-2">
-                    {[1, 2, 3].map(i => (
-                      <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-brand-accent overflow-hidden">
-                        <img src={`https://picsum.photos/seed/aluna-clinica${i}/100/100`} alt="aluna" className="w-full h-full object-cover opacity-80" loading="lazy" />
-                      </div>
-                    ))}
-                  </div>
+                  <div className="flex gap-0.5 text-amber-400" aria-hidden="true">★★★★★</div>
                   <span>+500 profissionais formados</span>
                 </div>
               </div>
 
               <ul className="space-y-3">
                 {[
-                  "Aprenda testes ortopédicos precisos para diagnóstico correto",
-                  "Descompressão com pedras quentes: o calor que relaxa e abre caminho para o alívio",
-                  "Libere o piriforme, tensor da fáscia lata e bursa sem cansar suas mãos"
+                  "Diagnóstico diferencial passo a passo",
+                "Protocolo sem dor com pedras quentes",
+                "Liberação sem cansar suas mãos"
                 ].map((item, index) => (
                   <li
                     key={index}

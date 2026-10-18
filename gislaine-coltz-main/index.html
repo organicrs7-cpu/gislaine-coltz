@@ -22,6 +22,17 @@
   </script>
   <!-- End Meta Pixel Code -->
 
+  <!-- Back redirect: ao tentar voltar, leva para a oferta exclusiva -->
+  <script>
+  (function () {
+    if (location.pathname !== '/' || !window.history || !history.pushState) return;
+    history.pushState({ gcBack: true }, '', location.href);
+    window.addEventListener('popstate', function () {
+      location.replace('/oferta-especial/');
+    });
+  })();
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">

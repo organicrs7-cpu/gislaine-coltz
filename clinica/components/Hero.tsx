@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from './Button';
-import { CheckCircle2, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -55,20 +55,8 @@ export const Hero: React.FC = () => {
             Saiba em minutos se é piriforme ou ciático. <span className="text-brand-primary">E trate sem dor.</span>
           </p>
           <p className="text-sm text-gray-500 mb-6 leading-relaxed font-light">
-            O protocolo clínico da Gi, com pedras quentes, para você resolver o caso que outros profissionais não resolvem.
+            O protocolo clínico da Gi, com pedras quentes.
           </p>
-          <ul className="space-y-3 text-left mb-8">
-            {[
-              "Diagnóstico diferencial passo a passo",
-                "Protocolo sem dor com pedras quentes",
-                "Liberação sem cansar suas mãos"
-            ].map((item, i) => (
-              <li key={i} className="flex items-center gap-3 text-gray-700 text-sm">
-                <CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
           <Button onClick={scrollToPricing} fullWidth>
             Quero Dominar Esse Protocolo
           </Button>
@@ -106,7 +94,7 @@ export const Hero: React.FC = () => {
               </h1>
 
               <p className="text-base text-gray-500 mb-8 leading-relaxed font-light">
-                O protocolo clínico da Gi, com pedras quentes, para você resolver o caso que outros profissionais não resolvem.
+                O protocolo clínico da Gi, com pedras quentes.
               </p>
 
               <div className="flex items-center gap-4 mb-8">
@@ -118,27 +106,6 @@ export const Hero: React.FC = () => {
                   <span>+500 profissionais formados</span>
                 </div>
               </div>
-
-              <ul className="space-y-3">
-                {[
-                  "Diagnóstico diferencial passo a passo",
-                "Protocolo sem dor com pedras quentes",
-                "Liberação sem cansar suas mãos"
-                ].map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center gap-3 text-gray-700"
-                    style={{
-                      opacity: isLoaded ? 1 : 0,
-                      transform: isLoaded ? 'translateX(0)' : 'translateX(-20px)',
-                      transition: `opacity 0.5s ease ${0.5 + index * 0.1}s, transform 0.5s ease ${0.5 + index * 0.1}s`,
-                    }}
-                  >
-                    <CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
 

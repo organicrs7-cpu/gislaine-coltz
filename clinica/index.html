@@ -28,6 +28,17 @@
     fbq('track', 'ViewContent', { content_name: 'Piriforme na Prática', content_category: 'Curso' });
     </script>
     <!-- End Meta Pixel Code -->
+
+    <!-- Back redirect: ao tentar voltar, leva para a oferta exclusiva -->
+    <script>
+    (function () {
+      if (!/^\/clinica\/?$/.test(location.pathname) || !window.history || !history.pushState) return;
+      history.pushState({ gcBack: true }, '', location.href);
+      window.addEventListener('popstate', function () {
+        location.replace('/clinica/oferta-especial/');
+      });
+    })();
+    </script>
   </head>
   <body class="bg-brand-surface text-gray-800 antialiased selection:bg-brand-soft selection:text-brand-primary">
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1750702522673557&ev=PageView&noscript=1" /></noscript>

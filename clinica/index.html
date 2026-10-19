@@ -32,7 +32,7 @@
     <!-- Back redirect: ao tentar voltar, leva para a oferta exclusiva -->
     <script>
     (function () {
-      if (!/^/clinica/?$/.test(location.pathname) || !window.history || !history.pushState) return;
+      if ((location.pathname !== '/clinica' && location.pathname !== '/clinica/') || !window.history || !history.pushState) return;
       var OFERTA = '/clinica/oferta-especial/';
       function armar() { history.pushState({ gcBack: true }, '', location.href); }
       armar();

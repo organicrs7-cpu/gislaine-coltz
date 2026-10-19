@@ -50,14 +50,14 @@ export const Hero: React.FC = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-gc-text leading-tight text-center lg:text-left">
-            Pare de cobrar pouco. Aprenda a Drenagem que pode valer <span className="text-gc-dark relative">
-              até R$&nbsp;200 por sessão
+            A temporada mais lucrativa da Drenagem <span className="text-gc-dark relative">
+              começa agora.
               <Sparkles className="absolute -top-2 -right-6 w-5 h-5 text-gc-gold animate-pulse" />
             </span>
           </h1>
 
           <p className="text-lg text-gray-600 leading-relaxed max-w-lg text-center lg:text-left">
-            Método com certificação internacional que posiciona você como especialista e faz a cliente voltar.
+            No verão, a drenagem pode valer até <strong className="text-gc-dark">R$&nbsp;300 por sessão</strong>. Aprenda o método da Gi, com certificação internacional, e esteja preparada.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">

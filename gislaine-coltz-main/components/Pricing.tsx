@@ -98,7 +98,13 @@ export const Pricing: React.FC = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-between items-center md:items-center py-4 border-b border-gray-100 bg-gc-primary/20 -mx-4 px-4 rounded-lg gap-2 text-center md:text-left">
                   <span className="flex items-center gap-2 font-medium text-gray-700">
-                    <Zap className="w-5 h-5 text-gc-dark shrink-0" /> Bônus: Suporte direto com a Gi no WhatsApp + Comunidade
+                    <Zap className="w-5 h-5 text-gc-dark shrink-0" /> Bônus: Mentoria com a Gi no WhatsApp
+                  </span>
+                  <span className="font-bold text-gc-dark whitespace-nowrap">R$ 1.800,00</span>
+                </div>
+                <div className="flex flex-col md:flex-row justify-between items-center md:items-center py-4 border-b border-gray-100 bg-gc-primary/20 -mx-4 px-4 rounded-lg gap-2 text-center md:text-left">
+                  <span className="flex items-center gap-2 font-medium text-gray-700">
+                    <Zap className="w-5 h-5 text-gc-dark shrink-0" /> Bônus: Comunidade de alunas
                   </span>
                   <span className="font-bold text-gc-dark whitespace-nowrap">Imensurável</span>
                 </div>
@@ -106,7 +112,7 @@ export const Pricing: React.FC = () => {
 
               <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-dashed border-gray-300 text-center md:text-left">
                 <span className="text-lg font-bold text-gray-500">Valor Total Entregue:</span>
-                <span className="text-2xl font-bold text-gray-400 line-through">R$ 1.947,00+</span>
+                <span className="text-2xl font-bold text-gray-400 line-through">R$ 3.497,00+</span>
               </div>
             </div>
 

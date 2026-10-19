@@ -28,9 +28,9 @@ export const BonusShowcase: React.FC = () => {
             bg: "bg-gc-accent/40"
         },
         {
-            title: "Suporte Direto com a Gi",
-            description: "Tire suas dúvidas direto com a Gi no WhatsApp.",
-            value: "R$ 250,00/h",
+            title: "Mentoria com a Gi no WhatsApp",
+            description: "Acesso grátis à mentoria com a Gi, direto no WhatsApp dela.",
+            value: "R$ 1.800,00",
             icon: MessageCircle,
             color: "text-gc-dark",
             bg: "bg-gc-primary/30"

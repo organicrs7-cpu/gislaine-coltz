@@ -25,11 +25,18 @@
   <!-- Back redirect: ao tentar voltar, leva para a oferta exclusiva -->
   <script>
   (function () {
-    if (location.pathname !== '/' || !window.history || !history.pushState) return;
-    history.pushState({ gcBack: true }, '', location.href);
-    window.addEventListener('popstate', function () {
-      location.replace('/oferta-especial/');
-    });
+    if (location.pathname !== "/" || !window.history || !history.pushState) return;
+    var OFERTA = '/oferta-especial/';
+    function armar() { history.pushState({ gcBack: true }, '', location.href); }
+    armar();
+    // O Chrome ignora entradas criadas sem interação; arma de novo no primeiro toque/clique
+    var feito = false;
+    function aoInteragir() {
+      if (feito) return; feito = true; armar();
+      ['pointerup', 'touchend', 'mousedown', 'keydown'].forEach(function (ev) { removeEventListener(ev, aoInteragir, true); });
+    }
+    ['pointerup', 'touchend', 'mousedown', 'keydown'].forEach(function (ev) { addEventListener(ev, aoInteragir, true); });
+    window.addEventListener('popstate', function () { location.replace(OFERTA); });
   })();
   </script>
 

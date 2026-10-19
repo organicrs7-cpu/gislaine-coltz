@@ -98,7 +98,7 @@ export const Pricing: React.FC = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-between items-center md:items-center py-4 border-b border-gray-100 bg-gc-primary/20 -mx-4 px-4 rounded-lg gap-2 text-center md:text-left">
                   <span className="flex items-center gap-2 font-medium text-gray-700">
-                    <Zap className="w-5 h-5 text-gc-dark shrink-0" /> Bônus: Suporte + Comunidade
+                    <Zap className="w-5 h-5 text-gc-dark shrink-0" /> Bônus: Suporte direto com a Gi no WhatsApp + Comunidade
                   </span>
                   <span className="font-bold text-gc-dark whitespace-nowrap">Imensurável</span>
                 </div>

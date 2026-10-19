@@ -28,8 +28,8 @@ export const BonusShowcase: React.FC = () => {
             bg: "bg-gc-accent/40"
         },
         {
-            title: "Suporte Direto",
-            description: "Tire dúvidas diretamente comigo no WhatsApp.",
+            title: "Suporte Direto com a Gi",
+            description: "Tire suas dúvidas direto com a Gi no WhatsApp.",
             value: "R$ 250,00/h",
             icon: MessageCircle,
             color: "text-gc-dark",
@@ -37,12 +37,11 @@ export const BonusShowcase: React.FC = () => {
         },
         {
             title: "Comunidade VIP",
-            description: "Acesso exclusivo à futura comunidade de alunas.",
+            description: "Acesso exclusivo à comunidade de alunas.",
             value: "Imensurável",
             icon: Users,
             color: "text-gc-dark",
-            bg: "bg-gc-gold/20",
-            tag: "Em Construção"
+            bg: "bg-gc-gold/20"
         }
     ];
 

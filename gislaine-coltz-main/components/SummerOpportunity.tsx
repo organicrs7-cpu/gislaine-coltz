@@ -80,8 +80,8 @@ export const SummerOpportunity: React.FC = () => {
   const animatedMonthly = useAnimatedNumber(monthly);
   const animatedSummer = useAnimatedNumber(summer);
 
-  const scrollToPricing = () => {
-    document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
+  const goToCheckout = () => {
+    window.open('https://pay.cakto.com.br/3f9wss5', '_blank');
   };
 
   return (
@@ -197,7 +197,7 @@ export const SummerOpportunity: React.FC = () => {
               </div>
 
               <div className="relative mt-8">
-                <Button variant="secondary" fullWidth onClick={scrollToPricing} className="hover:scale-105 !text-base md:!text-lg !px-6">
+                <Button variant="secondary" fullWidth onClick={goToCheckout} className="hover:scale-105 !text-base md:!text-lg !px-6">
                   Quero aproveitar o verão
                 </Button>
               </div>

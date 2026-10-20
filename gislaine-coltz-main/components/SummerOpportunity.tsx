@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Sun, CalendarCheck, TrendingUp } from 'lucide-react';
 import { Button } from './Button';
 
-const COURSE_PRICE = 597;
+const COURSE_PRICE = 486;
 const WEEKS_PER_MONTH = 4;
 // Print real dos 4 atendimentos; enquanto for null, a seção aparece só com o texto
 const AGENDA_PRINT: string | null = '/images/agenda-4-atendimentos.webp';
@@ -81,7 +81,7 @@ export const SummerOpportunity: React.FC = () => {
   const animatedSummer = useAnimatedNumber(summer);
 
   const goToCheckout = () => {
-    window.open('https://pay.cakto.com.br/3f9wss5', '_blank');
+    window.open('https://pay.cakto.com.br/vc4xgmu_678676', '_blank');
   };
 
   return (

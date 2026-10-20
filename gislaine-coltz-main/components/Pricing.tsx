@@ -147,15 +147,15 @@ export const Pricing: React.FC = () => {
                   <div className="mb-10 w-full bg-white/5 rounded-2xl p-6 border border-white/10 group-hover:bg-white/10 transition-colors duration-300">
                     <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
                       <span className="text-lg text-gray-400 pb-2">12x de</span>
-                      <span className="text-6xl font-bold tracking-tighter text-white">69,41</span>
+                      <span className="text-6xl font-bold tracking-tighter text-white">51,42</span>
                     </div>
-                    <p className="text-gray-400 text-sm font-medium">ou R$ 597,00 à vista</p>
+                    <p className="text-gray-400 text-sm font-medium">ou R$ 486,00 à vista</p>
                   </div>
 
                   <Button
                     fullWidth
                     className="!bg-gc-primary !text-gc-text hover:!bg-white border-0 text-xl py-6 font-bold shadow-[0_0_40px_rgba(255,255,255,0.1)] mb-8 transform hover:scale-105 transition-all"
-                    onClick={() => window.open("https://pay.cakto.com.br/3f9wss5", "_blank")}
+                    onClick={() => window.open("https://pay.cakto.com.br/vc4xgmu_678676", "_blank")}
                   >
                     QUERO GARANTIR MINHA VAGA
                   </Button>

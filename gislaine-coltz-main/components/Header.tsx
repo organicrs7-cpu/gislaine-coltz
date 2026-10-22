@@ -1,33 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { IMAGES } from '../constants';
+import React from 'react';
+
+const CHECKOUT_URL = 'https://pay.cakto.com.br/vc4xgmu_678676';
+
+// Data de hoje no fuso de Brasília, para a faixa da promoção
+const hojeBR = () =>
+  new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' });
 
 export const Header: React.FC = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToPricing = () => {
-    document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const hoje = hojeBR();
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-gc-dark/95 backdrop-blur-md py-3 shadow-md' : 'bg-transparent py-6'}`}>
-      <div className="container mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          {/* Logo removed as requested */}
-        </div>
-
-        <div className="hidden md:flex items-center gap-8">
-          {/* Navigation removed as requested */}
-        </div>
-      </div>
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <a
+        href={CHECKOUT_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block bg-[#1f1213] text-white text-center px-4 py-2.5 shadow-md hover:bg-black transition-colors"
+      >
+        <span className="text-xs sm:text-sm font-medium leading-snug">
+          <span className="inline-block bg-gc-gold text-[#1f1213] font-bold uppercase tracking-wider text-[10px] sm:text-xs px-2 py-0.5 rounded mr-2 align-middle">
+            Black
+          </span>
+          <strong>Acesso vitalício</strong> ao curso de Drenagem.{' '}
+          <span className="text-gc-gold font-semibold whitespace-nowrap">Válido só até hoje, {hoje}.</span>
+        </span>
+      </a>
     </header>
   );
 };

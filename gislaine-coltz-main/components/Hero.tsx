@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden flex items-center pt-20 lg:pt-0">
+    <div className="relative w-full min-h-screen overflow-hidden flex items-center pt-28 lg:pt-12">
       {/* Modern Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gc-light via-white to-gc-primary/20 z-0"></div>
 

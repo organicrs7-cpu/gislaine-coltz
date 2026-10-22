@@ -141,7 +141,7 @@ export const Pricing: React.FC = () => {
                     </p>
                   </div>
 
-                  <h3 className="text-3xl md:text-4xl font-bold mb-2">Acesso por 1 Ano</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold mb-2">Acesso Vitalício na Black</h3>
                   <p className="text-gray-300 text-sm mb-10 max-w-sm mx-auto">Garanta sua vaga com as condições especiais de lançamento.</p>
 
                   <div className="mb-10 w-full bg-white/5 rounded-2xl p-6 border border-white/10 group-hover:bg-white/10 transition-colors duration-300">

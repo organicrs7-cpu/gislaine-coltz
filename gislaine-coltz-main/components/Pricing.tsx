@@ -141,10 +141,12 @@ export const Pricing: React.FC = () => {
                     </p>
                   </div>
 
-                  <h3 className="text-3xl md:text-4xl font-bold mb-2">Acesso Vitalício na Black</h3>
-                  <p className="text-gray-300 text-sm mb-10 max-w-sm mx-auto">Garanta sua vaga com as condições especiais de lançamento.</p>
+                  <span className="inline-block bg-gc-gold text-gc-text font-bold uppercase tracking-wider text-xs px-3 py-1 rounded-full mb-4">Promoção da Black</span>
+                  <h3 className="text-3xl md:text-4xl font-bold mb-2">Formação Completa</h3>
+                  <p className="text-gray-300 text-sm mb-10 max-w-sm mx-auto">Com acesso vitalício, só durante a Black.</p>
 
                   <div className="mb-10 w-full bg-white/5 rounded-2xl p-6 border border-white/10 group-hover:bg-white/10 transition-colors duration-300">
+                    <p className="text-gray-400 text-base mb-2">De <span className="line-through">R$ 697,00</span> por</p>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
                       <span className="text-lg text-gray-400 pb-2">12x de</span>
                       <span className="text-6xl font-bold tracking-tighter text-white">51,42</span>

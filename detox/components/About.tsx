@@ -19,8 +19,8 @@ export const About: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-brand-secondary rounded-3xl rotate-3 opacity-20 translate-y-4 translate-x-4"></div>
               <img
-                src="/detox/gislaine-coltz.jpg"
-                alt="Gislaine Coltz"
+                src="/detox/images/gislaine-jaleco.webp"
+                alt="Gislaine Coltz de jaleco no consultório"
                 className="relative rounded-3xl shadow-2xl w-full object-cover aspect-[3/4] border-4 border-brand-primary/30"
               />
             </div>
@@ -39,7 +39,7 @@ export const About: React.FC = () => {
 
             <div className="space-y-6 text-brand-surface/80 leading-relaxed text-lg font-light">
               <p>
-                Criadora de protocolos práticos que geram resultado visível e imediato. Ela reuniu tudo que realmente funciona com manta térmica em um só protocolo.
+                Aprenda com a Gi a combinação de ativos, técnicas e manta térmica em um protocolo explicado passo a passo.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-6 mt-10">
@@ -60,8 +60,8 @@ export const About: React.FC = () => {
                   transition={{ delay: 0.5, duration: 0.5 }}
                   className="bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors"
                 >
-                  <h4 className="font-bold text-xl mb-2 text-brand-soft">Resultados</h4>
-                  <p className="text-sm">Resultados notáveis já nas primeiras sessões, gerando fidelização orgânica.</p>
+                  <h4 className="font-bold text-xl mb-2 text-brand-soft">Cuidado individualizado</h4>
+                  <p className="text-sm">Cada cliente tem objetivos diferentes. Avalie as necessidades e as contraindicações antes de cada sessão.</p>
                 </motion.div>
               </div>
             </div>

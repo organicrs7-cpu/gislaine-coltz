@@ -32,7 +32,7 @@ export const Curriculum: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-brand-surface">
+    <section id="conteudo" className="py-24 bg-brand-surface">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-brand-dark mb-6">O que você vai aprender</h2>

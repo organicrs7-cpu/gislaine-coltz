@@ -7,6 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gislaine Coltz | Curso de Drenagem Internacional</title>
 
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '749133820890800');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Back redirect: ao tentar voltar, leva para a oferta exclusiva -->
+  <script>
+  (function () {
+    if (location.pathname !== "/" || !window.history || !history.pushState) return;
+    var OFERTA = '/oferta-especial/';
+    function armar() { history.pushState({ gcBack: true }, '', location.href); }
+    armar();
+    // O Chrome ignora entradas criadas sem interação; arma de novo no primeiro toque/clique
+    var feito = false;
+    function aoInteragir() {
+      if (feito) return; feito = true; armar();
+      ['pointerup', 'touchend', 'mousedown', 'keydown'].forEach(function (ev) { removeEventListener(ev, aoInteragir, true); });
+    }
+    ['pointerup', 'touchend', 'mousedown', 'keydown'].forEach(function (ev) { addEventListener(ev, aoInteragir, true); });
+    window.addEventListener('popstate', function () { location.replace(OFERTA); });
+  })();
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -24,11 +57,14 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-CCv4bt5E.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-B9YbR4RU.css">
+  <script type="module" crossorigin src="/assets/index-YO7UynOX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BrSKhgkm.css">
 </head>
 
 <body>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=749133820890800&ev=PageView&noscript=1"
+  /></noscript>
   <div id="root"></div>
 </body>
 

@@ -148,10 +148,18 @@ export const Pricing: React.FC = () => {
                   <div className="mb-10 w-full bg-white/5 rounded-2xl p-6 border border-white/10 group-hover:bg-white/10 transition-colors duration-300">
                     <p className="text-gray-400 text-base mb-2">De <span className="line-through">R$ 697,00</span> por</p>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
-                      <span className="text-lg text-gray-400 pb-2">12x de</span>
-                      <span className="text-6xl font-bold tracking-tighter text-white">51,42</span>
+                      <span className="text-lg text-white/80 pb-2">4x de R$</span>
+                      <span className="text-5xl sm:text-6xl font-bold tracking-tighter text-white">121,50</span>
                     </div>
-                    <p className="text-gray-400 text-sm font-medium">ou R$ 486,00 à vista</p>
+                    <p className="text-white font-semibold">No Pix, sem juros e sem usar limite do cartão</p>
+                    <p className="text-white/80 text-sm mt-3">R$ 121,50 de entrada + 3 parcelas mensais de R$ 121,50. Total: R$ 486,00.</p>
+                    <p className="text-white/80 text-sm mt-4">Também disponível: R$ 486,00 à vista ou 12x de R$ 51,42 no cartão.</p>
+                  </div>
+
+                  <div className="w-full rounded-2xl border border-white/20 bg-white/10 p-5 mb-6 text-left">
+                    <h4 className="font-bold text-lg mb-2">Aprenda agora. Pague enquanto começa a atender.</h4>
+                    <p className="text-sm text-white/90 leading-relaxed">Você não precisa pagar tudo de uma vez. Entre com a primeira parcela, estude e coloque o aprendizado em prática enquanto paga as próximas.</p>
+                    <p className="text-xs text-white/70 mt-3">A renda dos atendimentos varia e não é garantida para cobrir as parcelas.</p>
                   </div>
 
                   <Button
@@ -159,7 +167,7 @@ export const Pricing: React.FC = () => {
                     className="!bg-gc-primary !text-gc-text hover:!bg-white border-0 text-xl py-6 font-bold shadow-[0_0_40px_rgba(255,255,255,0.1)] mb-8 transform hover:scale-105 transition-all"
                     onClick={() => window.open("https://pay.cakto.com.br/vc4xgmu_678676", "_blank")}
                   >
-                    QUERO GARANTIR MINHA VAGA
+                    QUERO PARCELAR NO PIX
                   </Button>
 
                   <div className="grid grid-cols-2 gap-y-4 gap-x-8 text-xs text-gray-400 w-full max-w-sm mx-auto">
@@ -173,7 +181,7 @@ export const Pricing: React.FC = () => {
                       <ShieldCheck className="w-4 h-4 text-gc-gold" /> Garantia de 7 Dias
                     </div>
                     <div className="flex items-center gap-2 justify-center lg:justify-start">
-                      <CreditCard className="w-4 h-4 text-gc-gold" /> Pix ou Cartão
+                      <CreditCard className="w-4 h-4 text-gc-gold" /> Pix em 4x ou Cartão
                     </div>
                   </div>
                 </div>

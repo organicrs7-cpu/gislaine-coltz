@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Button onClick={() => document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
               Quero Garantir Minha Vaga
             </Button>
             <button onClick={scrollToModules} className="flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-gray-300 text-gray-600 font-medium bg-white/50 backdrop-blur-sm hover:bg-white hover:text-gc-dark hover:border-gc-dark transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl active:scale-95">
@@ -73,8 +73,9 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col gap-3 pt-4">
             <div className="flex items-center gap-2 text-sm text-gray-500">
               <CheckCircle2 className="w-5 h-5 text-gc-gold" />
-              <span>Certificação Internacional Inclusa</span>
+              <span><strong className="text-gc-dark">4x de R$ 121,50 no Pix, sem juros.</strong><br />Sem cartão. Primeira parcela na entrada e mais 3 mensais.</span>
             </div>
+            <p className="text-sm text-gray-600 max-w-lg text-center lg:text-left">Comece a aprender agora e a atender enquanto paga as próximas parcelas.</p>
           </div>
         </div>
 

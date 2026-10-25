@@ -41,7 +41,7 @@ export const Faq: React.FC = () => {
                 </button>
                 
                 <div 
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}
+                  className={`overflow-hidden ${isOpen ? 'opacity-100' : 'hidden'}`}
                 >
                   <div className="p-6 pt-0 text-gray-500 leading-relaxed">
                     {item.answer}

@@ -101,6 +101,14 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
+    question: "Como funciona o Pix em 4x sem juros?",
+    answer: "No checkout, escolha o Pix parcelado: são R$ 121,50 de entrada e mais 3 parcelas mensais de R$ 121,50. O total é R$ 486,00, sem juros e sem usar o limite do cartão."
+  },
+  {
+    question: "Posso começar a estudar antes de quitar as parcelas?",
+    answer: "Sim. Após a confirmação da entrada, você recebe o acesso e pode estudar enquanto paga as próximas parcelas. Os ganhos com atendimentos dependem da sua prática e da sua agenda; não há garantia de que cubram o investimento."
+  },
+  {
     question: "O curso oferece certificado?",
     answer: "Sim! Ao concluir todas as aulas, você receberá um Certificado Internacional assinado por Gislaine Coltz."
   },

@@ -82,9 +82,11 @@ export const Pricing: React.FC = () => {
                                     <span className="text-3xl font-medium">R$</span>
                                     <span className="text-6xl font-bold tracking-tighter">97,00</span>
                                 </div>
-                                <p className="text-gray-500 mt-2">À vista + R$ 0,99 de taxa da plataforma</p>
-                                <p className="text-gray-500 text-sm mt-1">Total à vista no checkout: R$ 97,99</p>
-                                <p className="text-brand-primary font-semibold mt-4">Em breve: opção de 4x sem juros no Pix.</p>
+                                <p className="text-gray-500 mt-2">À vista ou em 4x sem juros no Pix</p>
+                                <div className="mt-5 rounded-2xl bg-brand-surface p-5 text-left">
+                                    <p className="text-brand-primary font-semibold">Pague a entrada e comece a aprender.</p>
+                                    <p className="text-gray-600 text-sm leading-relaxed mt-2">A primeira parcela é a sua entrada. Após a confirmação do pagamento, todo o conteúdo já é liberado para você. As outras 3 parcelas ficam para depois, conforme os vencimentos do checkout.</p>
+                                </div>
                             </div>
 
                             <a href="https://pay.cakto.com.br/35sa2qv" target="_blank" rel="noopener noreferrer" className="w-full">

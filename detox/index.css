@@ -1,5 +1,11 @@
 :root { --rose: #9d6a6b; --ink: #5a4647; --sand: #cea29b; --paper: #f6f5f2; }
-html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+.detox-offer-bar { position: sticky; top: 0; z-index: 50; background: #1f1213; box-shadow: 0 4px 8px #0002; }
+.detox-offer-bar a { display: block; padding: 10px 16px; color: white; text-align: center; font-size: 14px; line-height: 1.65; transition: background .2s; }
+.detox-offer-bar a:hover { background: #000; }
+.detox-offer-tag { display: inline-block; margin-right: 8px; padding: 2px 8px; border-radius: 4px; background: #cea29b; color: #1f1213; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; vertical-align: middle; }
+.detox-offer-detail { color: #cea29b; font-weight: 600; }
+@media (max-width: 640px) { .detox-offer-bar a { font-size: 12px; } .detox-offer-detail { display: block; } .detox-offer-tag { font-size: 10px; } }
 body { margin: 0; }
 * { box-sizing: border-box; }
 .container { max-width: 1180px !important; }

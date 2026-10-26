@@ -7,6 +7,7 @@ import { Pricing } from './components/Pricing';
 import { Footer } from './components/Footer';
 import { Testimonials } from './components/Testimonials';
 import { EarningsCalculator } from './components/EarningsCalculator';
+import { Results } from './components/Results';
 
 function App() {
   const hoje = new Date().toLocaleDateString('pt-BR', {
@@ -30,6 +31,7 @@ function App() {
         <PainPoints />
         <About />
         <Curriculum />
+        <Results />
         <Testimonials />
         <Pricing />
       </main>

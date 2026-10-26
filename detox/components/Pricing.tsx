@@ -79,13 +79,15 @@ export const Pricing: React.FC = () => {
                             <div className="text-center mb-8">
                                 <p className="text-gray-400 line-through mb-1">De R$ 197,00</p>
                                 <div className="flex items-center justify-center text-brand-dark gap-2">
-                                    <span className="text-3xl font-medium">12x de</span>
-                                    <span className="text-6xl font-bold tracking-tighter">7,79</span>
+                                    <span className="text-3xl font-medium">R$</span>
+                                    <span className="text-6xl font-bold tracking-tighter">97,00</span>
                                 </div>
-                                <p className="text-gray-500 mt-2">ou R$ 67,00 à vista</p>
+                                <p className="text-gray-500 mt-2">À vista + R$ 0,99 de taxa da plataforma</p>
+                                <p className="text-gray-500 text-sm mt-1">Total à vista no checkout: R$ 97,99</p>
+                                <p className="text-brand-primary font-semibold mt-4">Em breve: opção de 4x sem juros no Pix.</p>
                             </div>
 
-                            <a href="https://pay.cakto.com.br/g6hhtv9_680339" target="_blank" rel="noopener noreferrer" className="w-full">
+                            <a href="https://pay.cakto.com.br/35sa2qv" target="_blank" rel="noopener noreferrer" className="w-full">
                                 <Button fullWidth className="py-5 text-lg shadow-brand-primary/40 animate-pulse">
                                     COMPRAR AGORA
                                 </Button>

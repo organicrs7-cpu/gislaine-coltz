@@ -9,7 +9,7 @@ export const Hero: React.FC = () => (
         <h1>Protocolo Detox.<br /><em>Valorize cada<br />atendimento.</em></h1>
         <p>Aprenda com a Gi o passo a passo do <strong>Detox com Manta Térmica.</strong></p>
         <div className="detox-hero-actions">
-          <a className="detox-primary" href="#pricing">Quero aprender por R$ 67 <ArrowRight size={19} /></a>
+          <a className="detox-primary" href="#pricing">Quero aprender o protocolo <ArrowRight size={19} /></a>
         </div>
       </div>
       <div className="detox-hero-visual">

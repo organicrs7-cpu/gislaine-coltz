@@ -16,9 +16,9 @@ export const LINKS = {
 
 export const FEATURES: Feature[] = [
   {
-    title: "Certificação Internacional",
-    description: "Seja reconhecida mundialmente com um certificado válido dentro e fora do país.",
-    icon: Globe
+    title: "Comunidade de alunas",
+    description: "Troque experiências com outras profissionais que estão aprendendo o método.",
+    icon: Users
   },
   {
     title: "Método Exclusivo",
@@ -83,7 +83,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Renata Souza",
     role: "Massoterapeuta",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
-    content: "Já fiz diversos cursos, mas nenhum tem a entrega da Gislaine. Ela ensina o 'pulo do gato' que ninguém conta. O certificado internacional foi um diferencial enorme no meu espaço."
+    content: "Já fiz diversos cursos, mas nenhum tem a entrega da Gislaine. Ela ensina o 'pulo do gato' que ninguém conta."
   },
   {
     name: "Patricia Costa",
@@ -101,16 +101,8 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: "Como funciona o Pix em 4x sem juros?",
-    answer: "No checkout, escolha o Pix parcelado: são R$ 121,50 de entrada e mais 3 parcelas mensais de R$ 121,50. O total é R$ 486,00, sem juros e sem usar o limite do cartão."
-  },
-  {
-    question: "Posso começar a estudar antes de quitar as parcelas?",
-    answer: "Sim. Após a confirmação da entrada, você recebe o acesso e pode estudar enquanto paga as próximas parcelas. Os ganhos com atendimentos dependem da sua prática e da sua agenda; não há garantia de que cubram o investimento."
-  },
-  {
-    question: "O curso oferece certificado?",
-    answer: "Sim! Ao concluir todas as aulas, você receberá um Certificado Internacional assinado por Gislaine Coltz."
+    question: "O que está incluído na Super Black?",
+    answer: "Por R$ 297, você recebe a formação em Drenagem e todos os bônus: curso de Detox, precificação, e-book de linfonodos, mentoria com a Gi no WhatsApp e comunidade de alunas."
   },
   {
     question: "Por quanto tempo tenho acesso?",

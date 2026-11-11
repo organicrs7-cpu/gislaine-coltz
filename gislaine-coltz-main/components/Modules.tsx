@@ -25,7 +25,7 @@ export const Modules: React.FC = () => {
               <div className="p-6 bg-white rounded-2xl shadow-sm border border-gc-primary">
                 <div className="flex items-center gap-3">
                   <BookOpen className="text-gc-dark w-6 h-6" />
-                  <span className="font-bold text-gc-text">Certificado Incluso</span>
+                  <span className="font-bold text-gc-text">4 módulos de drenagem</span>
                 </div>
               </div>
             </div>

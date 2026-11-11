@@ -45,7 +45,7 @@ export const Hero: React.FC = () => {
 
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gc-gold/50 px-4 py-2 rounded-full shadow-lg shadow-gc-gold/10">
               <Globe className="w-4 h-4 text-gc-gold" />
-              <span className="text-gc-text font-bold text-xs uppercase tracking-wider">Certificação Internacional</span>
+              <span className="text-gc-text font-bold text-xs uppercase tracking-wider">Super Black</span>
             </div>
           </div>
 
@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
           </h1>
 
           <p className="text-lg text-gray-600 leading-relaxed max-w-lg text-center lg:text-left">
-            No verão, a drenagem pode valer até <strong className="text-gc-dark">R$&nbsp;300 por sessão</strong>. Aprenda o método da Gi, com certificação internacional, e esteja preparada.
+            No verão, a drenagem pode valer até <strong className="text-gc-dark">R$&nbsp;300 por sessão</strong>. Aprenda o método da Gi e esteja preparada.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -73,7 +73,7 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col gap-3 pt-4">
             <div className="flex items-center gap-2 text-sm text-gray-500">
               <CheckCircle2 className="w-5 h-5 text-gc-gold" />
-              <span>Certificação Internacional Inclusa</span>
+              <span>Todos os bônus inclusos</span>
             </div>
           </div>
         </div>
@@ -102,8 +102,8 @@ export const Hero: React.FC = () => {
                 <CheckCircle2 className="w-5 h-5 lg:w-6 lg:h-6 text-gc-dark" />
               </div>
               <div>
-                <p className="text-[10px] lg:text-xs text-gray-500 uppercase tracking-wider">Resultado</p>
-                <p className="font-bold text-sm lg:text-base text-gc-text">Certificação Reconhecida</p>
+                <p className="text-[10px] lg:text-xs text-gray-500 uppercase tracking-wider">Formação</p>
+                <p className="font-bold text-sm lg:text-base text-gc-text">Método da Gi</p>
               </div>
             </div>
 

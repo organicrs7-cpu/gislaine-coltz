@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Protocolo Detox - Gislaine Coltz</title>
+    <script>
+      (() => {
+        const arm = () => {
+          if (history.state?.detoxOffer) return;
+          history.replaceState({ ...history.state, detoxOffer: 'exit' }, '');
+          history.pushState({ ...history.state, detoxOffer: 'page' }, '');
+        };
+        const onInteraction = () => {
+          window.removeEventListener('click', onInteraction, true);
+          window.removeEventListener('keydown', onInteraction, true);
+          arm();
+        };
+        window.addEventListener('click', onInteraction, true);
+        window.addEventListener('keydown', onInteraction, true);
+        window.addEventListener('popstate', event => {
+          if (event.state?.detoxOffer === 'exit') location.replace('https://pay.cakto.com.br/g6hhtv9_680339');
+        });
+      })();
+    </script>
     <!-- Meta Pixel: same configuration as the drainage page. -->
     <script>
       !function(f,b,e,v,n,t,s)

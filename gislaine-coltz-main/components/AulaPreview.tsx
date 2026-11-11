@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Play, PlayCircle } from 'lucide-react';
 import { Button } from './Button';
 
-const CHECKOUT_URL = 'https://pay.cakto.com.br/vc4xgmu_678676';
+const CHECKOUT_URL = 'https://pay.cakto.com.br/a4ocx66';
 
 // O vídeo só é baixado quando a pessoa clica no play; até lá só a capa carrega
 export const AulaPreview: React.FC = () => {

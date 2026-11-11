@@ -71,12 +71,6 @@ export const Pricing: React.FC = () => {
                   <span className="font-bold text-gray-900 whitespace-nowrap">R$ 997,00</span>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-between items-center md:items-center py-4 border-b border-gray-100 bg-gc-primary/20 -mx-4 px-4 rounded-lg gap-2 text-center md:text-left">
-                  <span className="flex items-center gap-2 font-medium text-gray-700">
-                    <Star className="w-5 h-5 text-gc-dark shrink-0" /> Certificado Internacional
-                  </span>
-                  <span className="font-bold text-gc-dark whitespace-nowrap">Imensurável</span>
-                </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-center md:items-center py-4 border-b border-gray-100 bg-gc-light -mx-4 px-4 rounded-lg gap-2 text-center md:text-left">
                   <span className="flex items-center gap-2 font-medium text-gray-700">
@@ -141,33 +135,26 @@ export const Pricing: React.FC = () => {
                     </p>
                   </div>
 
-                  <span className="inline-block bg-gc-gold text-gc-text font-bold uppercase tracking-wider text-xs px-3 py-1 rounded-full mb-4">Promoção da Black</span>
+                  <span className="inline-block bg-gc-gold text-gc-text font-bold uppercase tracking-wider text-xs px-3 py-1 rounded-full mb-4">Super Black</span>
                   <h3 className="text-3xl md:text-4xl font-bold mb-2">Formação Completa</h3>
-                  <p className="text-gray-300 text-sm mb-10 max-w-sm mx-auto">Com acesso vitalício, só durante a Black.</p>
+                  <p className="text-gray-300 text-sm mb-10 max-w-sm mx-auto">O menor preço que já ofereci neste curso, com todos os bônus inclusos.</p>
 
                   <div className="mb-10 w-full bg-white/5 rounded-2xl p-6 border border-white/10 group-hover:bg-white/10 transition-colors duration-300">
                     <p className="text-gray-400 text-base mb-2">De <span className="line-through">R$ 697,00</span> por</p>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
-                      <span className="text-lg text-white/80 pb-2">4x de R$</span>
-                      <span className="text-5xl sm:text-6xl font-bold tracking-tighter text-white">121,50</span>
+                      <span className="text-lg text-white/80 pb-2">R$</span>
+                      <span className="text-5xl sm:text-6xl font-bold tracking-tighter text-white">297,00</span>
                     </div>
-                    <p className="text-white font-semibold">No Pix, sem juros e sem usar limite do cartão</p>
-                    <p className="text-white/80 text-sm mt-3">R$ 121,50 de entrada + 3 parcelas mensais de R$ 121,50. Total: R$ 486,00.</p>
-                    <p className="text-white/80 text-sm mt-4">Também disponível: R$ 486,00 à vista ou 12x de R$ 51,42 no cartão.</p>
-                  </div>
-
-                  <div className="w-full rounded-2xl border border-white/20 bg-white/10 p-5 mb-6 text-left">
-                    <h4 className="font-bold text-lg mb-2">Aprenda agora. Pague enquanto começa a atender.</h4>
-                    <p className="text-sm text-white/90 leading-relaxed">Você não precisa pagar tudo de uma vez. Entre com a primeira parcela, estude e coloque o aprendizado em prática enquanto paga as próximas.</p>
-                    <p className="text-xs text-white/70 mt-3">A renda dos atendimentos varia e não é garantida para cobrir as parcelas.</p>
+                    <p className="text-white font-semibold">Mais de 50% de desconto</p>
+                    <p className="text-white/80 text-sm mt-3">Você economiza R$ 400 na formação completa.</p>
                   </div>
 
                   <Button
                     fullWidth
                     className="!bg-gc-primary !text-gc-text hover:!bg-white border-0 text-xl py-6 font-bold shadow-[0_0_40px_rgba(255,255,255,0.1)] mb-8 transform hover:scale-105 transition-all"
-                    onClick={() => window.open("https://pay.cakto.com.br/vc4xgmu_678676", "_blank")}
+                    onClick={() => window.open("https://pay.cakto.com.br/a4ocx66", "_blank")}
                   >
-                    QUERO PARCELAR NO PIX
+                    QUERO A SUPER BLACK
                   </Button>
 
                   <div className="grid grid-cols-2 gap-y-4 gap-x-8 text-xs text-gray-400 w-full max-w-sm mx-auto">
@@ -181,7 +168,7 @@ export const Pricing: React.FC = () => {
                       <ShieldCheck className="w-4 h-4 text-gc-gold" /> Garantia de 7 Dias
                     </div>
                     <div className="flex items-center gap-2 justify-center lg:justify-start">
-                      <CreditCard className="w-4 h-4 text-gc-gold" /> Pix em 4x ou Cartão
+                      <CreditCard className="w-4 h-4 text-gc-gold" /> Checkout seguro
                     </div>
                   </div>
                 </div>

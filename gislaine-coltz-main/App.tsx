@@ -5,7 +5,6 @@ import { SummerOpportunity } from './components/SummerOpportunity';
 import { AulaPreview } from './components/AulaPreview';
 import { Features } from './components/Features';
 import { Instructor } from './components/Instructor';
-import { Credentials } from './components/Credentials';
 import { Modules } from './components/Modules';
 import { BonusShowcase } from './components/BonusShowcase';
 import { Pricing } from './components/Pricing';
@@ -37,7 +36,6 @@ function App() {
             "/images/thailand/05.jpg"
           ]}
         />
-        <Credentials />
       </div>
       <div id="modules">
         <Modules />
